@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styl.css">
+    <title>malarz</title>
+    <script>
+        function pole() {
+            p = document.getElementById('pole').value;
+            litr = 4;
+            puszka = p / litr;
+            zao = Math.ceil(puszka);
+            zamien.innerHTML = 'Liczba jednolitych puszek farby potrzebnych do pomalowanie wynosi:' + " " + zao;
+        }
+    </script>
+</head>
+<body>
+    <div class="baner">
+        <h1><a href="index.html">Koszty farby</a></h1>
+    </div>
+    <div class="lewy">
+        <h3><a href="mieszamy.html">Mieszamy</a> czy <a href="cena.html">wyceniamy?</a></h3>
+    </div>
+    <div class="prawy">
+        <h3>Obliczanie na podstawie powierzchni zapotrzebowanie na farbe</h3>
+        Podaj powierzchnię: <input type="number" id="pole"> <br>
+        <button type="button" onclick="pole()">Policz</button>
+        <p id="zamien">Liczba jednolitych puszek farby potrzebnych do pomalowanie wynosi:</p>
+    </div>
+    <div class="stopka">
+        MALARZ <br>
+        Stronę opracował: Maciej Walkowicz
+    </div>
+    <a href="dane_farby.jpg">Dane farby</a> <br>
+    <a href="dane_malowanie.jpg">Dane malowanie</a> <br>
+    <a href="kw1.jpg">Kw1</a> <br>
+    <a href="kw2.jpg">Kw2</a> <br>
+    <a href="kw3.jpg">Kw3</a> <br>
+    <a href="struktura_farby.jpg">Struktura farby</a> <br>
+    <a href="struktura_malowanie.jpg">Struktura malowanie</a> <br>
+</body>
+</html>
